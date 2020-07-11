@@ -1,0 +1,58 @@
+GITHUB KULLANIRKEN UYGULANACAK ADIMLAR
+
+***************************************************************************************
+Yeni git oluşturmak için:
+Bu işlem en başta sadece bir kez yapılır.
+git init
+***************************************************************************************
+
+Remote repository eklemek için:
+Değişiklikleri Github'ta oluşturduğumuz bir repository'ye aktarmak için kullanılır.
+git remote add origin <repository adresi>
+Örnek:
+git remote add origin https://github.com/tugceaay/GitNotlar.git
+***************************************************************************************
+
+Var olan repository yi kopyalamak için: 
+KOpyalanacak klasörde terminal açılarak aşağıdaki komut girilir
+git clone <repository adresi>
+Örnek:
+git clone https://github.com/tugceaay/GitNotlar.git
+***************************************************************************************
+
+Yeni brach açmak için:
+git checkout -b <brachin adı girilir>
+Örnek:
+git checkout -b new_branch
+***************************************************************************************
+
+Brach'te yapılan değişiklikleri kaydetmek için(commitlemek):
+git add .
+git commit -m "<commit mesajı>"
+Örnek:
+git add .
+git commit -m "Class eklendi."
+***************************************************************************************
+
+Brach'te commitlediğimiz değişiklikleri Github'a aktarmak için(pushlamak):
+git push origin <brach'in adı>
+Örnek:
+git push origin master
+***************************************************************************************
+
+Brach'te commitlediğimiz değişiklikleri başka bir branch'e aktarmak için(mergelemek):
+Mergelemek istenen brach'e geçilir:
+git checkout <geçilecek branch adı>
+Mergeleyelim:
+git merge <mergelenecek branch adı>
+Örnek:
+Yeni brachte yaptığımız değişikliği mastera mergeleyelim:
+git checkout master
+git merge x_branch
+***************************************************************************************
+
+Sonrasında istenirse master branch'i pushlanabilir:
+git push origin master
+
+
+
